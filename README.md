@@ -1,58 +1,120 @@
-<div style="text-align: center;">
-    <img src="https://i.ibb.co/Jj5PRsg/new-Portfolio.png" alt="Portfolio Banner" style="max-width: 100%; height: auto;">
-</div>
+# Yuvraj Soni — Personal Developer Portfolio
 
-# Portfolio Website
+A modern, responsive personal portfolio website built with Next.js, TypeScript, Tailwind CSS and Framer Motion. Designed with a premium dark theme featuring a black and purple visual identity.
 
-Looking for inspiration to create the best web developer portfolio website? Explore this personal portfolio website designed specifically for modern developers and creatives. Whether you're a full-stack web developer, a front-end web developer, or a graphic designer, this developer portfolio website offers the perfect foundation to showcase your skills. Built with React, this React portfolio website combines sleek design and performance for a standout online presence. Discover free portfolio website templates, explore web developer portfolio examples, and get unique web developer portfolio ideas to craft your own 3D portfolio website or professional site. Ideal for anyone seeking a free portfolio website that’s clean, responsive, and ready to impress.
+## About
 
-## Introduction
-
-This portfolio website serves as a showcase of my projects, skills, and experiences. It provides visitors with an overview of my professional background, links to my social profiles, and a portfolio gallery displaying some of my notable works.
+This portfolio showcases my journey as a Computer Science Engineering student passionate about Artificial Intelligence, Machine Learning, Generative AI and Software Development. It highlights my projects, technical skills, certifications and professional interests.
 
 ## Features
 
-- **Responsive Design:** The website is optimized for various devices, ensuring a seamless experience across desktops, tablets, and smartphones.
-- **Project Showcase:** A dedicated section to display my projects with brief descriptions, technologies used, and links to live demos or GitHub repositories.
-- **Skills & Expertise:** Highlights of my technical skills, tools, and programming languages proficiency.
-- **Contact Form:** An interactive form allowing visitors to get in touch with me directly.
+- **Dark Purple Theme** — Deep black and charcoal backgrounds with purple, violet and lavender accents
+- **Responsive Design** — Optimized for desktop, tablet and mobile devices
+- **Animated Developer Avatar** — Custom SVG illustration with floating tech badges
+- **Glassmorphism UI** — Subtle frosted-glass card effects throughout
+- **Smooth Animations** — Scroll-triggered entrance animations and hover effects powered by Framer Motion
+- **Sticky Navigation** — Glassmorphism navbar with smooth scrolling and active section highlighting
+- **Mobile Navigation** — Animated hamburger menu for smaller screens
+- **Project Showcase** — Five featured projects with detail modals, GitHub links and live demo buttons
+- **Skills Section** — Categorized skill groups (Programming, AI/ML, Web Development, Core CS, Soft Skills)
+- **Certifications** — Professional certificates with external verification links
+- **Education** — Academic status display
+- **Contact Section** — Email, GitHub and LinkedIn with functional links
+- **Downloadable Resume** — PDF resume download button in the hero section
+- **SEO Optimized** — Proper metadata, Open Graph tags and semantic HTML
 
-## Technologies Used
+## Tech Stack
 
-- **Next.js:** Next.js is used as the foundation for building React applications with server-side rendering and other powerful features.
-- **TypeScript:** TypeScript adds static typing to JavaScript, providing better tooling, code quality, and error detection.
-- **Tailwind CSS:** Tailwind CSS is employed for rapid UI development with utility-first CSS classes, enabling quick styling and responsiveness.
-- **Shadcn UI:** Shadcn UI provides additional UI components and design elements to enhance the visual aesthetics and user experience.
+| Technology | Purpose |
+|------------|---------|
+| [Next.js 14](https://nextjs.org/) | React framework with App Router |
+| [TypeScript](https://www.typescriptlang.org/) | Type-safe development |
+| [Tailwind CSS](https://tailwindcss.com/) | Utility-first styling |
+| [Framer Motion](https://www.framer.com/motion/) | Animations and transitions |
+| [React Icons](https://react-icons.github.io/react-icons/) | Technology and social icons |
+| [Lucide React](https://lucide.dev/) | UI icons |
+| [next-themes](https://github.com/pacocoursey/next-themes) | Dark mode support |
+
+## Project Structure
+
+```
+├── app/
+│   ├── globals.css              # Global styles, design tokens, animations
+│   ├── layout.tsx               # Root layout with metadata and fonts
+│   └── (home)/
+│       ├── page.tsx             # Main portfolio page
+│       └── components/
+│           ├── Navbar.tsx       # Sticky navigation with mobile menu
+│           ├── HeroSection.tsx  # Hero with name, headline and CTA buttons
+│           ├── DeveloperAvatar.tsx # SVG illustrated avatar
+│           ├── AboutSection.tsx # Professional introduction
+│           ├── Skills.tsx       # Categorized skill groups
+│           ├── Projects.tsx     # Project cards with detail modals
+│           ├── Certifications.tsx # Certificates and education
+│           ├── Contact.tsx      # Contact information and links
+│           ├── Footer.tsx       # Footer with social links
+│           └── Title.tsx        # Reusable section title component
+├── components/
+│   ├── theme-provider.tsx       # next-themes wrapper
+│   └── ui/
+│       ├── card-hover-effect.tsx     # Animated hover grid
+│       ├── direction-aware-hover.tsx # Mouse-direction image hover
+│       └── moving-border.tsx         # Animated border button
+├── lib/
+│   └── utils.ts                 # Utility functions (cn helper)
+├── public/
+│   ├── favicon.ico
+│   └── Yuvraj_Soni_Resume.pdf   # Downloadable resume
+├── tailwind.config.ts
+├── tsconfig.json
+└── package.json
+```
 
 ## Getting Started
 
-To get started with the project, follow these steps:
+### Prerequisites
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/0x1Luffy/New-Portfolio
-   ```
+- [Node.js](https://nodejs.org/) 18 or later
+- npm or yarn
 
-2. **Navigate to the Project Directory:**
-   ```bash
-   cd portfolio-next
-   ```
+### Installation
 
-3. **Install Dependencies:**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/yuvisoni/New-Portfolio.git
 
-4. **Start the Development Server:**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-   This command starts the development server. Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+# Navigate to the project directory
+cd New-Portfolio
 
-## Contributing
+# Install dependencies
+npm install
+```
 
-Contributions are welcome! Feel free to fork this repository, make changes, and submit a pull request.
+### Development
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Production Build
+
+```bash
+npm run build
+npm start
+```
+
+## Contact
+
+- **Email** — [yuvisoni2005@gmail.com](mailto:yuvisoni2005@gmail.com)
+- **GitHub** — [github.com/yuvisoni](https://github.com/yuvisoni)
+- **LinkedIn** — [linkedin.com/in/yuvraj-soni-328794384](https://www.linkedin.com/in/yuvraj-soni-328794384)
+
+## License
+
+This project is open source and available for personal use and reference.
+
+---
+
+Built by **Yuvraj Soni** — 2nd Year Computer Science Engineering Student
